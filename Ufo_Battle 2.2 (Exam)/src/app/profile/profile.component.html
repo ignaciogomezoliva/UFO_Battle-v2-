@@ -1,0 +1,9 @@
+<div>
+  <form (submit)="sendit(registerform)" [formGroup]="registerform">
+      <label for="password">Password: </label>
+      <input type="password" id="pass" formControlName="password"><br>
+      <label for="rpassword">Repeat password: </label>
+      <input type="password" id="rpass" formControlName="rpassword"><br>
+      <button type="submit" class="button-33"> Submit </button>
+  </form>
+</div>

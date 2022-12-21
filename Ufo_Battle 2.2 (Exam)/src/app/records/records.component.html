@@ -1,0 +1,44 @@
+<br>
+<h1>Global Scores</h1>
+<table id="records">
+  <tr id="top-row">
+    <th></th>
+    <th>User</th>
+    <th>Points</th>
+    <th>UFOs</th>
+    <th>Secs</th>
+    <th>Date</th>
+  </tr>
+  <tr *ngFor="let arecord of theRecords; let i = index">
+    <th> {{ i }} </th>
+    <th> {{arecord.username}}</th>
+    <th> {{arecord.punctuation}}</th>
+    <th> {{arecord.ufos}}</th>
+    <th> {{arecord.disposedTime}}</th>
+    <th> {{arecord.recordDate | date:'dd-MM-yyyy HH:mm:ss'}}</th>
+  </tr>
+</table>
+
+<div *ngIf="logged">
+  <h1>Personal Scores</h1>
+  <table id="records">
+    <tr id="top-row">
+      <th></th>
+      <th>User</th>
+      <th>Points</th>
+      <th>UFOs</th>
+      <th>Secs</th>
+      <th>Date</th>
+    </tr>
+    <tr *ngFor="let arecord of thePRecords; let i = index">
+      <th> {{ i }} </th>
+      <th> {{arecord.username}}</th>
+      <th> {{arecord.punctuation}}</th>
+      <th> {{arecord.ufos}}</th>
+      <th> {{arecord.disposedTime}}</th>
+      <th> {{arecord.recordDate | date:'dd-MM-yyyy HH:mm:ss'}}</th>
+    </tr>
+  </table>
+</div>
+
+

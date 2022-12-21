@@ -1,0 +1,16 @@
+
+
+<div class="header">
+  <h1>LOGIN</h1>
+</div>
+
+<div>
+    <form (submit)="sendit(loginform)" [formGroup]="loginform">
+        <label for="user">Username: </label>
+        <input type="text" id="username" formControlName="username"><br>
+        <label for="password">Password: </label>
+        <input type="password" id="pass" formControlName="password"><br>
+        <button type="submit" [disabled] = "!loginform.valid" class="button-33"> Submit </button>
+    </form>
+    <br>
+</div>

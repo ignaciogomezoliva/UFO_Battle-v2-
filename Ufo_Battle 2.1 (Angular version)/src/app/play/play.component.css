@@ -1,0 +1,10 @@
+#info_points {position: absolute; top:190px; right:80px; height:70px;}
+#info_time {position: absolute; top:190px; left:80px; height:70px;}
+
+
+#missile {position:absolute;bottom:10px; left:300px; height:70px;}
+
+#ufo { position:absolute;bottom:375px;left:0px; width: 70px;}
+
+.setOfUfos{ position:absolute;bottom:500px;left:0px;width:70px;}
+

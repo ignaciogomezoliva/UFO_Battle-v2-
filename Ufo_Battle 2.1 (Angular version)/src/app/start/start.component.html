@@ -1,0 +1,23 @@
+<body>
+  <div>
+    <br>
+
+    <h2>Let's beat some UFOs!!</h2>
+    <button id= "play" class="button-33-big" (click)="play()">Jugar!</button>
+    <br>
+
+    <div>
+      <h3>Intructions:</h3>
+      <p>Use the arrow keys to control the direction of your missiles and the space bar to fire them. </p>
+      <p>You can adjust the number of UFOs and the time in the preferences page.</p>
+      <p>You can also check your results and compare them with those of other players in the records tab.</p>
+    </div>
+
+    <div style="padding: 80px; border-style: dashed;" *ngIf="unlogged">
+      <p id="logged" >Log or register to keep track of your scores!</p>
+      <button id= "login" class="button-33" (click)="login()" >Login</button>
+      <button id= "register" class="button-33" (click)="register()">Register</button>
+    </div>
+    <button id="logout" class="button-33" (click)="logout()" *ngIf="!unlogged">Logout</button>
+
+  </div>

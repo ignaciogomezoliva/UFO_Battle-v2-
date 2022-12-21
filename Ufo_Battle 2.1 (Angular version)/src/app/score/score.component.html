@@ -1,0 +1,15 @@
+<div class="header">
+  <h1>TIME'S UP!</h1>
+</div>
+
+<div style="width: 1100px;">
+    <p id="penalty1"> Time penalty: 1/{{ penalty1 }}</p>
+    <p id="penalty2"> Number of UFOs' penalty: {{ penalty2 }}</p>
+    <h1 id="total"> FINAL SCORE: {{ calc }}</h1>
+</div>
+
+<div *ngIf="logged && !pressed">
+  <p>Would you like to store your score in the server?</p>
+  <button id="yes" class="button-33" (click)="storeIt()"> Yay! </button>
+  <button id="no" class="button-33" (click)="notStore()"> Nah... </button>
+</div>

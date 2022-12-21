@@ -1,0 +1,26 @@
+
+<div style="padding: 60px;">
+  <label for="UFOs">How many UFOs do you want?</label>
+  <br>
+  <select id="number" name="numberOptions" form="UFOs" [(ngModel)]="number">
+    <option value="1">Just one</option>
+    <option value="2">A couple would be nice</option>
+    <option value="3">I want three!</option>
+    <option value="4">Four or nothing...</option>
+    <option value="5">I want to beat them all!</option>
+  </select>
+  <br>
+  <br>
+  <label for="UFOs" style="padding: 20px;">How much time (seconds) do you want?</label>
+  <br>
+  <select id="time" name="timeOptions" form="UFOs" [(ngModel)]="time">
+    <option value="60">60s is more then enough</option>
+    <option value="120">I can do it in 120s</option>
+    <option value="180">I need 180s...</option>
+  </select>
+  <br>
+  <br>
+  <form id="UFOs">
+    <input id = "play" class = "button-33" type="button" value="Accept" (click)="save()">
+  </form>
+</div>
